@@ -108,15 +108,13 @@ python ./src/relation_extraction.py \
 		--log_file $log \
 ```
 ## Output
-> _prob.tsv: contains the prediction results with two columns: the predicted target label and its corresponding probability. It is important for calculating evaluation metrics such as F1, accuracy, precision, recall, and AUC
+> _prob.tsv: contains the prediction results with two columns: the predicted target label and its corresponding probability 
 
-> _.html: The visualization output file will be saved in HTML format. This file provides a visualization of highlighted keywords for the selected text
+> _.html: The visualization of keywords from selected text sample
 
-> epoch_loss.png: illustrates the average training and validation loss across each epoch. It provides a visual representation of the model's learning progression over time
+> epoch_loss.png: illustrates the average training and validation loss across each epoch
 
-> epoch_loss_metrics.png: showcases the validation accuracy, F1, precision, recall, and training loss for each epoch. It helps understand the model's performance throughout the training process
-
-
+> epoch_loss_metrics.png: showcases the validation accuracy, F1, precision, recall, and training loss for each epoch 
 
 ## Citation
 Please cite our paper: https://arxiv.org/abs/2403.11425
