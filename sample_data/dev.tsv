@@ -1,0 +1,6 @@
+Target	Text	Entity_type	Pat_ID
+0	"[s] insufficiency ( acute ) ; adverse effect of antineoplastic and immunosuppressive drugs, personal history of irradiation [e]"	ICD 	id_30
+0	"[s] versus complete, anemia, unspecified, kinking and stricture of ureter without hydronephrosis, retention of urine, unspecified, prsnl hx of malig neoplm of rectum, rectosig junct, and anus [e]"	ICD 	id_31
+1	"[s] soft tissue, and skin, other specified disorders of male genital organs, nonrheumatic aortic ( valve ) stenosis, anesthesia of skin, tingling skin, encounter for preprocedural examination nos [e]"	ICD 	id_32
+0	"[s] malignant neoplasm of sigmoid colon, diverticulosis of colon; need for prophylactic vaccination and inoculation against influenza ; malignant neoplasm of large intestine nos [e]"	ICD 	id_33
+0	"[s] other voice disturbance, shadow, lung, personal history of malignant neoplasm of larynx, personal history of antineoplastic chemotherapy, personal history of irradiation [e]"	ICD 	id_34

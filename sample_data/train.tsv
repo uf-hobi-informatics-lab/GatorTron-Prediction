@@ -1,0 +1,7 @@
+Target	Text	Entity_type	Pat_ID
+0	"[s] enteritis nos, unspecified infectious and parasitic diseases, radiographic dye allergy status [e]"	ICD 	id_7
+1	"[s] best verbal response, confused conversation, encounter for screening for cardiovascular disorders, personal history of other venous thrombosis and embolism [e]"	ICD 	id_8
+0	"[s] solitary pulmonary nodule, subsegmental branch of the bronchial tree, personal history of immunosupression therapy, personal history of irradiation [e]"	ICD 	id_9
+0	"[s] branch of the bronchial tree ; secondary malignant neoplasm of right lung, adverse effect of antineoplastic and immunosuppressive drugs, subsequent encounter [e]"	ICD 	id_10
+0	"[s] solitary pulmonary nodule, subsegmental branch of the bronchial tree, kinking and stricture of ureter without hydronephrosis, contact with and ( suspected ) exposure to other viral communicable diseases [e]"	ICD 	id_11
+0	"[s] unspecified episodic mood disorder, opioid type dependence unspecified use; malignant neoplasm of bronchus and lung, unspecified, radiotherapy encounter [e]"	ICD 	id_12
