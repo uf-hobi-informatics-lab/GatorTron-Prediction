@@ -59,6 +59,9 @@ If you need to customize these tags, you can change them in config.py
 - Visualization 
 > LIME (Local Interpretable Model-agnostic Explanations) package is used in our package to visualize the important narrative features. For more detailed information, please refer to: https://github.com/marcotcr/lime
 
+![image](https://github.com/user-attachments/assets/89c7865d-41d3-4073-b85b-cd99d20ffafa)
+
+
 ## Use Instrucation
 
 - Training/ Evaluation/ Prediction
