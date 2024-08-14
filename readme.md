@@ -32,16 +32,14 @@ Once the preprocessing is complete, you can run the package to obtain end-to-end
 - Data Format
 > See sample_data dir for the train, dev, and test data format.
 
-> The sample data is a small subset of the data prepared from the 2018 umass made1.0 challenge corpus.
-
 > We did not provide a script for data preprocessing. You can follow our example data format to generate your own dataset. 
 
 ```
 # Data Format: tsv file with 4 columns:
-1. target_class: True
-2. sentence: [s] Penicillin [e] .
+1. target: 1
+2. text: [s] cerebral arteries, atelectasis, localized swelling [e] .
 3. entity_type: Drug
-4. entity_id: id_1
+4. pat_id: id_1
 
 Note: 
 1) the entity between [s][e] is the paragraph we used for text classification
@@ -109,6 +107,16 @@ python ./src/relation_extraction.py \
 		--max_num_checkpoints 1 \
 		--log_file $log \
 ```
+## Output
+> _prob.tsv: contains the prediction results with two columns: the predicted target label and its corresponding probability. It is important for calculating evaluation metrics such as F1, accuracy, precision, recall, and AUC
+
+> _.html: The visualization output file will be saved in HTML format. This file provides a visualization of highlighted keywords for the selected text
+
+> epoch_loss.png: illustrates the average training and validation loss across each epoch. It provides a visual representation of the model's learning progression over time
+
+> epoch_loss_metrics.png: showcases the validation accuracy, F1, precision, recall, and training loss for each epoch. It helps understand the model's performance throughout the training process
+
+
 
 ## Citation
 Please cite our paper: https://arxiv.org/abs/2403.11425
