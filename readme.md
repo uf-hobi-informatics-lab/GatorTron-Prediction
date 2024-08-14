@@ -108,6 +108,8 @@ python ./src/relation_extraction.py \
 		--log_file $log \
 ```
 ## Output
+Here are some important output files that might be helpful for the analysis of the model's performance and learning progression:
+
 > _prob.tsv: contains the prediction results with two columns: the predicted target label and its corresponding probability 
 
 > _.html: The visualization of keywords from selected text sample
