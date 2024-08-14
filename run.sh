@@ -33,7 +33,7 @@ python ./src/relation_extraction.py \
 		--classification_scheme 1 \
 		--pretrained_model UFNLP/gatortron-medium\
 		--data_dir $data_dir \
-		--new_model_dir $new_model_dir \
+		--new_model_dir $nmd \
 		--predict_output_file $pof \
 		--overwrite_model_dir \
 		--seed 13 \
