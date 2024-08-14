@@ -6,7 +6,7 @@ A visualization technique is also implemented in this package, providing insight
 
 This package provides end to end process from training to prediction.
 
-<img src="https://github.com/user-attachments/assets/5061093e-7841-42ec-9c5e-091d2a5b4c75" width="500" height="500">
+<img src="https://github.com/user-attachments/assets/e9ac2dca-b89a-47ee-86d6-31fa2b4c6160" width="500" height="500">
 
 ## Dependency
 The package is built on top of the Transformers developed by the HuggingFace.
