@@ -60,10 +60,7 @@ If you need to customize these tags, you can change them in config.py
 > LIME (Local Interpretable Model-agnostic Explanations) package is used in our package to visualize the important narrative features. For more detailed information, please refer to: https://github.com/marcotcr/lime
 
 > Note: Under the following file, 2 lines of code need to be modified before executing due to the special tags.
-> File path: envs/[envs_name]/lib/python3.9/site-packages/lime/lime_text.py
-Under function ‘def distance_fn(x):’
-1. change ‘sample = self.random_state.randint(1, doc_size + 1, num_samples - 1)’ to ‘sample = self.random_state.randint(1, doc_size + 1 - 6, num_samples - 1)’
-2. change ‘features_range = range(doc_size)’ to ‘features_range = range(3, doc_size - 3)’
+> File path: envs/[envs_name]/lib/python3.9/site-packages/lime/lime_text.py. Under function ‘def distance_fn(x):’, first change ‘sample = self.random_state.randint(1, doc_size + 1, num_samples - 1)’ to ‘sample = self.random_state.randint(1, doc_size + 1 - 6, num_samples - 1)’, then change ‘features_range = range(doc_size)’ to ‘features_range = range(3, doc_size - 3)’.
 
 ![image](https://github.com/user-attachments/assets/89c7865d-41d3-4073-b85b-cd99d20ffafa)
 
