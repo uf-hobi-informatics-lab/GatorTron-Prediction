@@ -106,7 +106,6 @@ class TaskRunner(object):
         tr_loss = 0.0
         t_step = 1
         latest_best_score = 0.0
-##############################################################ziyi 1
         # training loop
         epoch_loss_history = []
         eval_epoch_loss_history = []
@@ -115,16 +114,13 @@ class TaskRunner(object):
         f1_history = []
         recall_history = []
         precison_history = []
-##############################################################ziyi 2
 
         epoch_iter = trange(
             self.args.num_train_epochs, desc="Epoch", disable=not self.args.progress_bar
         )
         for epoch in epoch_iter:
-# ##############################################################ziyi 1
             epoch_loss = 0
             epoch_num = 0
-# ##############################################################ziyi 2
 
             batch_iter = tqdm(
                 self.train_data_loader, desc="Batch", disable=not self.args.progress_bar
@@ -148,11 +144,9 @@ class TaskRunner(object):
                     loss = batch_output[0]
 
                 loss = loss / self.args.gradient_accumulation_steps # iteration average sample loss
-# ##############################################################ziyi 1
                 iteration_loss_history.append(loss.item()) #loss.item() iteration average loss
                 epoch_loss += loss.item() * len(batch) #Sum_loss in each iteration,  len(feature)=batch size
                 epoch_num += len(batch) # sum of all the batch size from every iteration, Total number of patients
-# ##############################################################ziyi 2
                 tr_loss += loss.item()
 
                 if self.args.fp16:
@@ -217,7 +211,6 @@ class TaskRunner(object):
                         epoch + 1, eval_loss, acc, p, r, f1
                     )
                 )
-# ##############################################################ziyi 1
                 acc_history.append(acc)
                 #auc_history.append(total_auc)
                 f1_history.append(f1)
@@ -225,7 +218,6 @@ class TaskRunner(object):
                 precison_history.append(p)
                 eval_epoch_loss_history.append(eval_loss)
                 #specificity_history.append(total_specificity)
-# ##############################################################ziyi 2
 
                 # max_num_checkpoints > 0, save based on eval
                 # save model
@@ -233,13 +225,10 @@ class TaskRunner(object):
                     self._save_model(epoch + 1)
                     latest_best_score = f1
 
-# ##############################################################ziyi 1
             epoch_loss = epoch_loss / epoch_num  # Got epoch average loss
             epoch_loss_history.append(epoch_loss)
-# ##############################################################ziyi 2
         epoch_iter.close()
 
-# ##############################################################ziyi 1
         #Get epoch_loss_metrics
         plt.plot(epoch_loss_history, label = 'training_loss')
         plt.plot(acc_history, label = 'validation_accuracy')
@@ -264,7 +253,6 @@ class TaskRunner(object):
         plt.title('Average loss of each iteration')
         plt.savefig(os.path.join(self.new_model_dir_path, 'iteration_loss.png'))
         plt.close()
-# ##############################################################ziyi 2
 
         # max_num_checkpoints=0 then save at the end of training
         if self.args.max_num_checkpoints <= 0:
@@ -285,8 +273,6 @@ class TaskRunner(object):
         )
 
         return acc, p, r, f1, eval_loss
-
-        ##################### highlight
 
     def predict_highlight(self, index):
         self.args.logger.info("start prediction with highlight...")
@@ -323,8 +309,6 @@ class TaskRunner(object):
             outputs.append(pred_probs[0])
         outputs = np.array(outputs)
         return outputs
-
-        ##################### highlight
 
     def predict(self):
         self.args.logger.info("start prediction...")
@@ -559,7 +543,6 @@ class TaskRunner(object):
         preds = np.argmax(preds, axis=-1)
         print('preds after argmax:',preds)
         return preds, temp_loss, pred_prob, preds_prob
-        ###############new2_preds_prob
 
     def _load_examples_by_task(self, task="train", input=None):
         examples = None
