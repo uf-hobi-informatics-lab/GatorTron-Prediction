@@ -85,6 +85,7 @@ log=./log.txt
 log_highlight =./log_highlight.html
 
 # NOTE: we have more options available, you can check our wiki for more information
+#do_predict_highlight, highlight_index, highlight_output_file can be removed if you do not need highlight function
 
 python ./src/relation_extraction.py \
 		--model_type bert \
