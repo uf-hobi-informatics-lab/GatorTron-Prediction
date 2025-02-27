@@ -1,8 +1,0 @@
-Target	Text	Entity_type	Pat_ID
-0	"[s] enlarged prostate without luts, hypoxemia, shadow, lung, personal history of malignant neoplasm, malignant neoplasm of unspecified part of right bronchus or lung [e]"	ICD 	id_0
-0	"[s] malignant neoplasm of other specified sites of female breast; not elsewhere classified, other symptoms and signs involving the musculoskeletal system, acquired absence of left breast and nipple, nan [e]"	ICD 	id_1
-0	"[s] cerebral arteries, atelectasis, localized swelling, mass and lump, neck, personal history of other infectious and parasitic diseases, unspecified, right lower quadrant pain, vomiting [e]"	ICD 	id_2
-0	"[s] upper abdominal pain, unspecified, left upper quadrant pain; malignant neoplasm of unspecified part of left bronchus or lung, secondary malignant neoplasm of bone, meningioma nos [e]"	ICD 	id_3
-1	"[s] other preterm infants, 2, 500 + grams, abnormal levels of other serum enzymes, shadow, lung, unspecified fall, initial encounter, dependence on supplemental oxygen [e]"	ICD 	id_4
-1	"[s] constipation nos; outlet dysfunction constipation; cystocele, midline, rectocele, full incontinence of feces, nan; mixed hyperlipidemia, dementia, unspecified [e]"	ICD	id_5
-
