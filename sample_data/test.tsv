@@ -1,7 +1,0 @@
-target	ICDDescription	entity_type	deid_pat_ID
-0	[s] personal history of other diseases of urinary system ; hydronephrosis with ureteral stricture, not elsewhere classified[e]	ICDDescription	IRB202003159_PAT_1229
-1	[s] personal history of colonic polyps, personal history of nicotine dependence, personal history of antineoplastic chemotherapy[e]	ICDDescription	IRB202003159_PAT_12290
-0	[s] encounter for long - term ( current ) use of aspirin, encounter for long - term ( current ) use of insulin[e]	ICDDescription	IRB202003159_PAT_12302
-1	[s] nonspecific abnormal findings in stool contents, diverticulitis of colon without mention of hemorrhage; hypersomnia with sleep apnea, unspecified, impacted cerumen[e]	ICDDescription	IRB202003159_PAT_12303
-0	[s] secondary malignant neoplasm of bone and bone marrow, compression of brain secondary malignant neoplasm of brain and spinal cord, nan [e]	ICDDescription	IRB202003159_PAT_12337
-1	[s] fallopian tube, and broad ligament, abdominal pain, unspecified site, abdominal or pelvic swelling, mass, or lump, generalized [e]	ICDDescription	IRB202003159_PAT_1234
