@@ -1,11 +1,9 @@
 ADVANCED-CAD	text	entity_type	id
 met	[s]scar ( adeno mibi ). repeat adenosine mibi negative recurrent ischemia inferobasal scar lvef 54 %. episode occur night bed. advised metabolic syndrome importance careful diabetic control well regular exercise.[e]	NER_IR	238
-met	[s]##phatics : lymphadenopathy ( periauricular, occipital, supraclavicular, clavicular ) skin : ulcer rash observed episode increased time controlled rest occasionally, nitroglycerin tablets.[e]	NER_IR	117
 met	[s]renal perfusion, renal function, advise role / impact acei bp heart ( her daughter worried heart suffer take acei ). suggested renal specialist would helpful determining role renal artery disease renal dysfunction. length visit 45 minutes. impression hydronephrosis.[e]	NER_IR	139
 not met	[s]energy appetite. lungs : cta b / l result - iron study abd - s / nt / nd, nabs today's labs : renal transplant biopsy. id - concerns, u / a negative followup clinic visit arranged patient.[e]	NER_IR	331
 not met	[s]lymph 14 l ( 22 - 44 ) % eos 2 ( 0 - 8 ) % absolute eos 0. 26 ( 0. 1 - 0. 3 ) th / cmm pager 84261 riss / nph.[e]	NER_IR	376
 met	[s]consultation pending time. end - stage, hospice comfort end - stage. quite weak understands circumstances, wish decreased breath sound throughout heart. 3 / 6 holosystolic murmur heard weakly. conduction delay ugly appearing. first - degree av block leftward[e]	NER_IR	264
-not met	[s]# 189 ; - 1 ppd x 30 years. skin : unremarkable. arrangement made seen clinic 6 month restaging ct chest, abdomen pelvis. benjamin h. hendricks, m. d. 100 clairmoor drive otherwise, well.[e]	NER_IR	200
 not met	[s]##ciency candidal esophagitis zeasorb ( talc powder ) 1 application top tid, affected area # 70 gram ( s ) continues difficulty medications. htn - high today. back pain - pt appt next week[e]	NER_IR	354
 not met	[s]0 l ( 12. 0 - 16. 0 ) gm / dl lymph 8 l ( 22 - 44 ) % physical exam : [ vmf47 ] review systems : pulm : amylase : 47 lipase : please take meal[e]	NER_IR	333
 met	[s]/ 05 / 73 12 / 05 / 73 : wbc 8. 8 16. 2, hct 33. 2, plt 283 record date : 2070 - 10 - 08 pulse 60 - 70 regular. cni pending pre - op.[e]	NER_IR	161
