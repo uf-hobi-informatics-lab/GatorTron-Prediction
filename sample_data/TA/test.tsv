@@ -1,7 +1,6 @@
 ADVANCED-CAD	text	entity_type	id
 met	[s]moderate mitral regurgitation. focal deficits. - chest : bibasilar rales. - heent : sclera anicteric heent : oropharynx benign, moist mucous membranes, anicteric[e]	NER_IR	108
 not met	[s]toole county hospital history present illness : 78 - year - old woman come internal medicine associate pender care center abdomen nt / nd, hsm. mass extrem clubbing, cyanosis, edema. minimal oa changes.[e]	NER_IR	115
-met	[s]@ 7 / 14. ibw : 172lbs. / 78 kg 126 % ibw abw : 183 lb. / 83 kg dob : 8 / 11 / 2062 august 26, 2117 1. - bp : 107 / 60[e]	NER_IR	118
 not met	[s]changes, cont. squam cell skin ca - saw dr. jeffries repeat ct pet scan showed tumor. squam cell skin ca - stable. r cranial 6 nn palsy - resolved. breathing still fine ankle swelling.[e]	NER_IR	119
 met	[s]##cardiogram, bring cardiac catheterization, see narrowing either graft native artery may contributing anterior wall ischemia. would like get echocardiogram sure dealing constrictive disease, think probably need cardiac catheterization.[e]	NER_IR	131
 met	[s]careful given pt's tenous volume status except noted above, noncontributory. breathing home intermittently difficult, especially rushes. heparin induced thrombocytopenia hit severely reduced, although one adequate maneuver performed resistance increased ;[e]	NER_IR	135
