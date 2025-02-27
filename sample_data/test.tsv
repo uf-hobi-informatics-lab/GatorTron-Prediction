@@ -1,4 +1,4 @@
-Target	ICDDescription	entity_type	deid_pat_ID
+Target	Text	entity_type	id
 0	[s] personal history of other diseases of urinary system ; hydronephrosis with ureteral stricture, not elsewhere classified[e]	ICD	id_0
 1	[s] personal history of colonic polyps, personal history of nicotine dependence, personal history of antineoplastic chemotherapy[e]	ICD	id_1
 0	[s] encounter for long - term ( current ) use of aspirin, encounter for long - term ( current ) use of insulin[e]	ICD	id_2
