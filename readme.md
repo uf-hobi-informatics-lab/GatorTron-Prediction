@@ -88,7 +88,7 @@ log_highlight =./log_highlight.html
 #do_predict_highlight, highlight_index, highlight_output_file can be removed if you do not need highlight function
 
 python ./src/relation_extraction.py \
-		--model_type bert \
+		--model_type megatron \
 		--data_format_mode 0 \
 		--classification_scheme 1 \
 		--pretrained_model UFNLP/gatortron-medium \
