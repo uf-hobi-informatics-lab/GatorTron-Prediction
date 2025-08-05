@@ -534,12 +534,14 @@ class TaskRunner(object):
         batch_iter.close()
         temp_loss = temp_loss / total_sample_num
         #print('preds:',preds)
-        #use softmax to get the prob for the positive class (class 1)
-        #pred_prob = np.max(preds, axis=-1)
-        pred_prob = np.max(preds_prob, axis=-1)
-        #print('preds_prob after softmax:',preds_prob)
         #pred_prob = preds_prob[:, 1]
+
+        #use softmax to get the prob for the positive class (class 1) for AUC
+        #pred_prob = np.max(preds_prob, axis=-1)
+        positive_class_index = self.label2idx["1"]  # typically 1, but should be explicit!!!
+        pred_prob = preds_prob[:, positive_class_index] # Comment this for multi-classification
         print('pred_prob:',pred_prob)
+        
         preds = np.argmax(preds, axis=-1)
         print('preds after argmax:',preds)
         return preds, temp_loss, pred_prob, preds_prob
