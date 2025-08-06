@@ -37,7 +37,7 @@ Once the preprocessing is complete, you can run the package to obtain end-to-end
 ```
 # Data Format: tsv file with 4 columns:
 1. target: 1
-2. text: [s] cerebral arteries, atelectasis, localized swelling [e] .
+2. text: [s] cerebral arteries, atelectasis, localized swelling.[e]
 3. entity_type: Drug
 4. pat_id: id_1
 
