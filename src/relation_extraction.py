@@ -10,6 +10,14 @@ from data_processing.io_utils import save_json, save_text
 from task import TaskRunner
 from utils import TransformerLogger
 from transformers import AutoModel, AutoTokenizer, AutoConfig
+import os
+
+print("PyTorch version:", torch.__version__)
+print("CUDA version compiled with:", torch.version.cuda)
+
+print("GPU count:", torch.cuda.device_count())
+print("Current device:", torch.cuda.current_device() if torch.cuda.is_available() else "CPU",flush=True)
+
 
 
 def set_seed(gargs):
@@ -286,7 +294,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--non_relation_label",
-        default="NonRel",
+        default="0",
         type=str,
         help="The label used for representing "
         "candidate entity pairs that is not a true relation (negative sample)",
@@ -317,7 +325,7 @@ if __name__ == "__main__":
         "--focal_loss_gamma",
         default=2,
         type=int,
-        help="focussing parameter used in focal loss function",
+        help="focusing parameter used in focal loss function",
     )
     parser.add_argument(
         "--use_binary_classification_mode",
