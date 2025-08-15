@@ -98,6 +98,7 @@ python ./src/relation_extraction.py \
 		--overwrite_model_dir \
 		--seed 13 \
 		--max_seq_length 512 \
+		--non_relation_label "0" \
 		--cache_data \
 		--do_train \
 		--do_eval \
@@ -120,7 +121,7 @@ python ./src/relation_extraction.py \
 ## Output
 Here are some important output files that might be helpful for the analysis of the model's performance and learning progression:
 
-> _prob.tsv: contains the prediction results with two columns: the predicted target label and its corresponding probability 
+> _prob.tsv: contains the prediction results with two columns: the predicted target label and the positive class probability
 
 > _.html: The visualization of keywords from selected text sample
 
