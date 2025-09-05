@@ -1,8 +1,8 @@
 # GatorTron Prediction
 
-This package has been developed so researchers can easily use state-of-the-art transformer models and large language models for disease onset prediction from electronic health records (EHR).
+This package provides researchers with an easy-to-use framework for applying state-of-the-art transformer and large language models to disease onset prediction from electronic health records (EHR).
 
-A visualization technique is also implemented in this package, providing insight into important narrative features driving the prediction. This package provides end to end process from training to prediction.
+A visualization technique is also implemented in this package, providing insight into important narrative features driving the prediction. This package provides an end-to-end process from training to prediction.
 
 <img src="https://github.com/user-attachments/assets/e9ac2dca-b89a-47ee-86d6-31fa2b4c6160" width="500" height="500">
 
