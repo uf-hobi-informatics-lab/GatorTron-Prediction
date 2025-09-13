@@ -7,7 +7,7 @@ A visualization technique is also implemented in this package, providing insight
 <img src="https://github.com/user-attachments/assets/e9ac2dca-b89a-47ee-86d6-31fa2b4c6160" width="500" height="500">
 
 ## Dependency
-The package is built on top of the Transformers developed by the HuggingFace.
+The package is built on top of the Transformers developed by HuggingFace.
 We have the requirement.txt to specify the packages required to run the project.
 
 ## Available Models
@@ -30,7 +30,7 @@ We have the requirement.txt to specify the packages required to run the project.
 Once the preprocessing is complete, you can run the package to obtain end-to-end classification prediction results.
 
 - Data Format
-> See sample_data dir for the train, dev, and test data format.
+> See the sample_data dir for the train, dev, and test data format.
 
 > We did not provide a script for data preprocessing. You can follow our example data format to generate your own dataset. 
 
@@ -44,13 +44,13 @@ Once the preprocessing is complete, you can run the package to obtain end-to-end
 Note: 
 1) the entity between [s][e] is the paragraph we used for text classification
 2) in the test.tsv, you can set all labels to neg or False or whatever, because we will not use the label anyway
-3) We recommend to evaluate the test performance in a separate process based on prediction. (see **post-processing**)
-4) We recommend using official evaluation scripts to do evaluation to make sure the results reported are reliable.
+3) We recommend evaluating the test performance in a separate process based on prediction. (see **post-processing**)
+4) We recommend using official evaluation scripts to evaluate to make sure the results reported are reliable.
 ```
 - Special Tags
-> we use 2 special tags to identify entities
+> We use 2 special tags to identify entities
 ```
-# The defaults tags we defined in the repo are
+# The default tags we defined in the repo are
 EN_START = "[s]"
 EN_END = "[e]"
 
@@ -59,7 +59,7 @@ If you need to customize these tags, you can change them in config.py
 - Visualization 
 > LIME (Local Interpretable Model-agnostic Explanations) package is used in our package to visualize the important narrative features. For more detailed information, please refer to: https://github.com/marcotcr/lime
 
-> Note: Under the following file, 2 lines of code need to be modified before executing due to the special tags.
+> Note: The following file requires modification of two lines of code before execution due to special tags.
 
 > File path: envs/[envs_name]/lib/python3.9/site-packages/lime/lime_text.py.
 
@@ -68,7 +68,7 @@ If you need to customize these tags, you can change them in config.py
 ![image](https://github.com/user-attachments/assets/89c7865d-41d3-4073-b85b-cd99d20ffafa)
 
 
-## Use Instrucation
+## Use Instruction
 
 - Training/ Evaluation/ Prediction
 > Please refer to the wiki page for all details of the parameters
@@ -84,8 +84,8 @@ pof=./predictions.txt
 log=./log.txt
 log_highlight =./log_highlight.html
 
-# NOTE: we have more options available, you can check our wiki for more information
-#do_predict_highlight, highlight_index, highlight_output_file can be removed if you do not need highlight function
+# NOTE: We have more options available. You can check our wiki for more information
+#do_predict_highlight, highlight_index, and highlight_output_file can be removed if you do not need the highlight function
 
 python ./src/relation_extraction.py \
 		--model_type megatron \
@@ -110,7 +110,7 @@ python ./src/relation_extraction.py \
 		--train_batch_size 4 \
 		--eval_batch_size 4 \
 		--learning_rate 1e-5 \
-		--num_train_epochs 3 \
+		--num_train_epochs 30 \
 		--gradient_accumulation_steps 1 \
 		--do_warmup \
 		--warmup_ratio 0.1 \
@@ -123,7 +123,7 @@ Here are some important output files that might be helpful for the analysis of t
 
 > _prob.tsv: contains the prediction results with two columns: the predicted target label and the positive class probability
 
-> _.html: The visualization of keywords from selected text sample
+> _.html: The visualization of keywords from the selected text sample
 
 > epoch_loss.png: illustrates the average training and validation loss across each epoch
 
@@ -146,7 +146,7 @@ Please contact us or post an issue if you have any questions.
 * Yonghui Wu (yonghui.wu@ufl.edu)
 
 ## Other Clinical Pre-trained Transformer Models
-We have a series transformer models pre-trained on MIMIC-III.
+We have a series of transformer models pre-trained on MIMIC-III.
 You can find them here:
 - https://transformer-models.s3.amazonaws.com/mimiciii_albert_10e_128b.zip
 - https://transformer-models.s3.amazonaws.com/mimiciii_bert_10e_128b.zip
