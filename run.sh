@@ -27,7 +27,7 @@ log=./log_gatortron_sample_test.txt
 
 
 # NOTE: we have more options available, you can check our wiki for more information
-python ./src/relation_extraction.py \
+python ./src/text_classification.py \
 		--model_type megatron \
 		--data_format_mode 0 \
 		--classification_scheme 1 \
