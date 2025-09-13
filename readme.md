@@ -87,7 +87,7 @@ log_highlight =./log_highlight.html
 # NOTE: We have more options available. You can check our wiki for more information
 #do_predict_highlight, highlight_index, and highlight_output_file can be removed if you do not need the highlight function
 
-python ./src/relation_extraction.py \
+python ./src/text_classification.py \
 		--model_type megatron \
 		--data_format_mode 0 \
 		--classification_scheme 1 \
