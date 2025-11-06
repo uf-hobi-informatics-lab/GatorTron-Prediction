@@ -19,7 +19,7 @@ conda activate textclass
 
 export CUDA_VISIBLE_DEVICES=2
 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
-data_dir=/orange/yonghui.wu/chenziyi/prediction/GatorTron-Clinical-Transformer-Prediction/sample_data
+data_dir=/orange/.../GatorTron-Prediction/sample_data
 nmd=./new_model_gatortron_test
 pof=./gatortron_syn_sample_test.txt
 log_highlight=./log_highlight_gatortron_sample_test.html
