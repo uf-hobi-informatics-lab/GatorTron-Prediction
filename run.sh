@@ -12,7 +12,7 @@
 
 module load python
 module load conda
-cd /orange/yonghui.wu/chenziyi/prediction/GatorTron-Clinical-Transformer-Prediction
+cd /orange/.../GatorTron-Prediction
 
 #env
 conda activate textclass
